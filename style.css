@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jost:ital,wght@0,100..900;1,100..900&family=Mozilla+Text:wght@200..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+      
+    
+
+
+}
+
+.profile-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 675px;
+    width: 100%;
+    background-color:rgba(118, 118, 118, 0.137);
+    box-shadow: 0 5px 10px  rgba(0, 0, 0, 0.5) ;
+    border-radius: 25px;
+    padding: 23px;
+    position: relative;
+    z-index: 1; 
+    overflow: hidden;
+    animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+
+}
+
+.profile-card:before{
+      height: 13vh;
+    max-width: 675px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    background-color: rgb(27, 210, 24);
+    border-radius: 24px 24px ;
+     filter: blur(10px);
+}
+
+
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(9, 170, 6);
+    padding: 3px;
+   box-shadow: 0 5px 10px  rgba(0, 0, 0, 1.7) ;
+
+}
+
+.image .frofile-img{
+    height: 100%; 
+    width: 100%;
+    object-fit: cover;
+     border-radius: 50%;
+     border: 3px solid #000000;
+}
+
+.textData{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+
+.profile-card .textData .name{
+    font-size:2.7em;
+    font-weight: 500;
+     color: rgb(255, 255, 255);
+}
+
+.profile-card .textData .job {
+    margin-top: 10px;
+    text-align: left;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+
+}
+
+ .profile-card .meadiaButton{
+
+    display: flex;
+    align-items: center;
+  
+
+ }
+.meadiaButton  P{
+    margin-left: 10px;
+ }
+ .meadiaButton{
+    margin-top: 25px;
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+ }
+
+
+ .meadiaButton .link{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size:1.7m;
+    border-radius: 50%;
+    background-color: blueviolet;
+    text-decoration: none;
+    margin: 8px; 
+     height: 100%;
+       width: 100%;
+       border-radius: 10px;
+       padding: 12px;
+       font-size: 2em;
+     
+ }
+
+  .meadiaButton .link .mastext{
+    font-size: 0.7em;
+
+  }
+
+ .profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: space-around;
+
+ }
+
+ button{
+    margin-right:  20px;
+    padding: 8px 24px;
+    background-color: blueviolet;
+    color: antiquewhite;
+    font-size: large;
+    font-weight:400;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    
+
+
+ }
+
+ button:hover{
+    background-color: rgb(100, 3, 190);
+ }
+
+.profile-card .analys{
+    display: flex;
+    align-items: center;
+    margin: 25px;
+ }
+
+ .profile-card .analys .data{
+
+     display: flex;
+    align-items: center;
+    color: rgb(44, 44, 44);
+    padding: 0 24px;
+    border-right: 2PX solid rgb(160, 157, 157);
+
+
+ }
+
+  .profile-card .analys .data:last-child{
+    border-right: none;
+ }
+/* ...existing code... */
+
+@keyframes fade-in {
+    from { opacity: 0; transform: scale(0.95);}
+    to { opacity: 1; transform: scale(1);}
+}
+
+* {
+    /* ...existing code... */
+    animation: fade-in 0.7s ease;
+}
+
+/* ...existing code... */
+@media (max-width: 675px) {
+    .profile-card:before{
+        
+        height: 160px;
+    }
+    .meadiaButton{
+        
+        margin-top: 25px;
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+       
+    
+    }
+    .mastext
+    .textData{
+        margin-top: 20px;
+    }
+    .meadiaButton .link{ 
+    
+        height: 100%;
+       width: 100%;
+       border-radius: 10px;
+       padding: 12px;
+       font-size: 2em;
+       
+    }
+
+    
+}
