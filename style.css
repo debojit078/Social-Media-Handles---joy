@@ -52,9 +52,9 @@ body{
     left: 0;
   
     width: 100%;
-    background-color: rgb(27, 210, 24);
+    background-color: rgb(3, 39, 201);
     border-radius: 24px 24px ;
-     filter: blur(10px);
+     filter: blur(20px);
 }
 
 
@@ -64,7 +64,7 @@ body{
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background-color: rgb(9, 170, 6);
+    background-color: rgb(6, 110, 170);
     padding: 3px;
    box-shadow: 0 5px 10px  rgba(0, 0, 0, 1.7) ;
 
@@ -75,7 +75,7 @@ body{
     width: 100%;
     object-fit: cover;
      border-radius: 50%;
-     border: 3px solid #000000;
+     border: 3px solid #041385;
 }
 
 .textData{
